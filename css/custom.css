@@ -420,3 +420,10 @@ ul.timelinelist > li:before {
             right: auto;
         }
 }
+    
+a:not([href]):before {
+    display: block;
+    content: "";
+    height: 200px;
+    margin: -200px 0 0;
+}
