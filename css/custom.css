@@ -1,8 +1,5 @@
 /**
  * File              : css/custom.css
- * Author            : Marcos Horro <marcos.horro@udc.gal>
- * Last Modified Date: Mar 18 Set 2018 16:01:31 CEST
- */
 /* bib-publication-list styles
 -------------------------------------------------- */
 span.undefined { color:red; }
@@ -420,7 +417,7 @@ ul.timelinelist > li:before {
             right: auto;
         }
 }
-    
+
 a:not([href]):before {
     display: block;
     content: "";
