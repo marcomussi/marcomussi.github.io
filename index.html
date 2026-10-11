@@ -1,549 +1,1169 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  Personal page of Marco Mussi. One file, no build step, no libraries (the Inter font is in fonts/).
+
+  HOW TO UPDATE
+  - Add a paper: copy any <li class="pub"> ... </li> block, paste it at the top of its year, edit the text.
+    Labels (C1 = oldest, C2, ...) and all counts are computed automatically: never renumber by hand.
+  - New year: add <h4 class="year">2027</h4> and a new <ol class="pubs"> ... </ol> above the previous year.
+  - Highlight yourself in author lists with <b>Marco Mussi</b>; mark equal contribution with *.
+  - New CV: change the file name of the "Curriculum Vitae" link in the hero.
+  - Colours and sizes: the variables at the top of <style> (section 1).
+-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Pagina personale - Marco Mussi">
-        <meta name="author" content="Marco Mussi">
-        <title>Marco Mussi</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <script>
-            var nav_height = 100px;
-            $(window).bind('hashchange', function(e){
-                if($(location.hash).hasClass('my-class')){
-                    scrollBy(0, nav_height);
-                }
-                return false;
-            });
-            $(document).ready(function(){
-                if($(location.hash).hasClass('my-class')){
-                    $('html,body').animate({
-                        scrollTop: $(location.hash).offset().top - nav_height - 10
-                    }, 10 );
-                }
-            });
-        </script>
-        <style>
-            h2 {color: rgb(69, 122, 251);}
-            h3 {color: rgb(69, 122, 251);}
-            h4 {color: rgb(69, 122, 251);}
-            h5 {color: rgb(69, 122, 251);}
-            a {color: rgb(69, 122, 251);}
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md fixed-top bg-light bg-udc">
-                <div class="container">
-                    <div class="col-3 mx-auto d-block">
-                        <a class="navbar-brand" href="https://marcomussi.github.io/"><b>Marco Mussi</b></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#publications">&nbsp; Publications &nbsp;</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#education">&nbsp; Education &nbsp;</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contacts">&nbsp; Contacts &nbsp;</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main role="main" class="container">
-            <div class="row">
-                <div class="col-3 mx-auto d-block">
-                    <br><br>
-                    <div class="row mt-5 mx-auto d-block text-center">
-                        <img src="img/profile.jpg" class="img-fluid rounded-circle mb-3" alt="Profile picture">
-                        <h2>Marco Mussi</h2>
-                        <p class="lead"><b>Assistant Professor</b><br>Politecnico di Milano</p>
-                    </div>
-                    <hr>
-                    <div class="row mx-auto d-block">
-                        <p><a href="https://www.github.com/marcomussi"><img src="img/github.png" alt="GitHub" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://www.github.com/marcomussi">GitHub</a></p>
-                        <p><a href="https://www.linkedin.com/in/marcomussi95/"><img src="img/linkedin_4.png" alt="LinkedIn" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://www.linkedin.com/in/marcomussi95/">LinkedIn</a></p>
-                        <p><a href="https://scholar.google.com/citations?user=3gca-JUAAAAJ&hl=en"><img src="img/scholar_4.png" alt="Google Scholar" width="26" height="26"></a>&nbsp; &nbsp;<a href="https://scholar.google.com/citations?user=3gca-JUAAAAJ&hl=en">Google Scholar</a></p>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <br><br>
-                    <section id="aboutme" class="mt-5" align="justify">
-                        I am Assistant Professor with the Dipartimento di Elettronica, Informazione e Bioingegneria, in the Artificial Intelligence and Robotic Laboratory of Politecnico di Milano. My research focuses on artificial intelligence and machine learning, particularly on foundational aspects of online learning and reinforcement learning.
-                        <br><br> Download my <a href="CV_20261010.pdf">Curriculum Vitae</a>.
-                    </section>
-                    <section id="publications" class="mt-5">
-                        <h2 class="display-5">Publications</h2><hr>
-                        <h4>International Conferences</h4>
-                        <p>
-                            [C1] Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <u>Marco Mussi</u>. Worst-Case Regret Bounds for Combinatorial Bandits with Ranking Feedback. Advances in Neural Information Processing Systems (NeurIPS). 2026.
-                            <br>
-                            <a href="">[Link - To Appear]</a>
-                            <a href="papers/neurips2026cmab/paper.pdf">[Paper - To Appear]</a>
-                            <a href="papers/neurips2026cmab/poster.pdf">[Poster - To Appear]</a>
-                        </p>
-                        <p>
-                            [C2] Simone Drago, <u>Marco Mussi</u> and Alberto Maria Metelli. Online Compatible Reward Identification from Preference Feedback. Proceedings of the 43rd International Conference on Machine Learning (ICML). 2026.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v306/drago26a.html">[Link]</a>
-                            <a href="papers/icmlcompreward2026/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlcompreward2026/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C3] Federico Corso, <u>Marco Mussi</u> and Alberto Maria Metelli. Fast Mixing Steady-State Control in Markov Decision Processes. Proceedings of the 43rd International Conference on Machine Learning (ICML). 2026.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v306/corso26a.html">[Link]</a>
-                            <a href="papers/icmlstability2026/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlstability2026/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C4] Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <u>Marco Mussi</u>. Learning to Rank from Incomplete Rankings. Proceedings of the 43rd International Conference on Machine Learning (ICML). 2026.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v306/migali26a.html">[Link]</a>
-                            <a href="papers/icmlltr2026/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlltr2026/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C5] Alessandro Montenegro, Federico Mansutti, <u>Marco Mussi</u>, Matteo Papini and Alberto Maria Metelli. Reusing Trajectories in Policy Gradients Enables Fast Convergence. Proceedings of the 43rd International Conference on Machine Learning (ICML). 2026.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v306/montenegro26a.html">[Link]</a>
-                            <a href="papers/rpg2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2506.06178">[arXiv]</a>
-                            <a href="papers/rpg2025/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C6] Cristiano Migali, <u>Marco Mussi</u>, Gianmarco Genalti and Alberto Maria Metelli. Tightening Regret Lower and Upper Bounds in Restless Rising Bandits. Advances in Neural Information Processing Systems (NeurIPS). 2025.
-                            <br>
-                            <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/1aa670dafbd4b32ebf483f8372e612c5-Abstract-Conference.html">[Link]</a>
-                            <a href="papers/neurips2025srb/paper.pdf">[Paper]</a>
-                            <a href="papers/neurips2025srb/poster.pdf">[Poster]</a>
-                            <a href="papers/neurips2025srb/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [C7] Simone Drago*, <u>Marco Mussi</u>* and Alberto Maria Metelli. Sleeping Reinforcement Learning. Proceedings of the 42nd International Conference on Machine Learning (ICML). 2025.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v267/drago25a.html">[Link]</a>
-                            <a href="papers/icmlsleeping2025/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlsleeping2025/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C8] Simone Drago, <u>Marco Mussi</u> and Alberto Maria Metelli. Towards Theoretical Understanding of Sequential Decision Making with Preference Feedback. Proceedings of the 42nd International Conference on Machine Learning (ICML). 2025.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v267/drago25b.html">[Link]</a>
-                            <a href="papers/icmlpref2025/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlpref2025/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C9] Alessandro Montenegro, <u>Marco Mussi</u>, Matteo Papini and Alberto Maria Metelli. Convergence Analysis of Policy Gradient Methods with Dynamic Stochasticity. Proceedings of the 42nd International Conference on Machine Learning (ICML). 2025.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v267/montenegro25a.html">[Link]</a>
-                            <a href="papers/icmlpes2025/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlpes2025/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C10] Simone Drago, <u>Marco Mussi</u> and Alberto Maria Metelli. Position: Constants are Critical in Regret Bounds for Reinforcement Learning. Proceedings of the 42nd International Conference on Machine Learning (ICML). 2025.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v267/drago25c.html">[Link]</a>
-                            <a href="papers/icmlposition2025/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlposition2025/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C11] Alessandro Montenegro, <u>Marco Mussi</u>, Matteo Papini and Alberto Maria Metelli. Last-Iterate Global Convergence of Policy Gradients for Constrained Reinforcement Learning. Advances in Neural Information Processing Systems (NeurIPS). 2024.
-                            <br>
-                            <a href="https://papers.neurips.cc/paper_files/paper/2024/hash/e47470631adb188a30f14c9738fe157b-Abstract-Conference.html">[Link]</a>
-                            <a href="papers/neuripscrl2024/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2407.10775">[arXiv]</a>
-                            <a href="papers/neuripscrl2024/poster.pdf">[Poster]</a>
-                            <a href="papers/neuripscrl2024/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [C12] <u>Marco Mussi</u>*, Simone Drago*, Marcello Restelli and Alberto Maria Metelli. Factored-Reward Bandits with Intermediate Observations. Proceedings of the 41st International Conference on Machine Learning (ICML). 2024.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v235/mussi24a.html">[Link]</a>
-                            <a href="papers/icmlfrb2024/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlfrb2024/poster.pdf">[Poster]</a>
-                            <a href="papers/icmlfrb2024/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [C13] <u>Marco Mussi</u>, Alessandro Montenegro, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli. Best Arm Identification for Stochastic Rising Bandits. Proceedings of the 41st International Conference on Machine Learning (ICML). 2024.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v235/mussi24b.html">[Link]</a>
-                            <a href="papers/arxivbaisrb2023/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2302.07510">[arXiv]</a>
-                            <a href="papers/arxivbaisrb2023/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C14] Alessandro Montenegro, <u>Marco Mussi</u>, Alberto Maria Metelli and Matteo Papini. Learning Optimal Deterministic Policies with Stochastic Policy Gradients. Proceedings of the 41st International Conference on Machine Learning (ICML). 2024.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v235/montenegro24a.html">[Link]</a>
-                            <a href="papers/icmldpol2024/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2405.02235">[arXiv]</a>
-                            <a href="papers/icmldpol2024/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C15] Gianmarco Genalti, <u>Marco Mussi</u>, Nicola Gatti, Marcello Restelli, Matteo Castiglioni and Alberto Maria Metelli. Graph-Triggered Rising Bandits. Proceedings of the 41st International Conference on Machine Learning (ICML). 2024.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v235/genalti24a.html">[Link]</a>
-                            <a href="papers/icmlgtrb2024/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlgtrb2024/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [C16] Francesco Bacchiocchi*, Gianmarco Genalti*, Davide Maran*, <u>Marco Mussi</u>*, Marcello Restelli, Nicola Gatti and Alberto Maria Metelli. Autoregressive Bandits. Proceedings of the 27th International Conference on Artificial Intelligence and Statistics (AISTATS). 2024.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v238/bacchiocchi24a.html">[Link]</a>
-                            <a href="papers/arb/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2212.06251">[arXiv]</a>
-                            <a href="papers/arb/poster.pdf">[Poster]</a>
-                            <a href="papers/arb/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [C17] <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. Dynamical Linear Bandits. Proceedings of the 40th International Conference on Machine Learning (ICML). 2023.
-                            <br>
-                            <a href="https://proceedings.mlr.press/v202/mussi23a.html">[Link]</a>
-                            <a href="papers/icmldlb2023/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2211.08997">[arXiv]</a>
-                            <a href="papers/icmldlb2023/poster.pdf">[Poster]</a>
-                            <a href="papers/icmldlb2023/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [C18] <u>Marco Mussi</u>*, Gianmarco Genalti*, Alessandro Nuara, Francesco Trovò, Marcello Restelli and Nicola Gatti. Dynamic Pricing with Volume Discounts in Online Settings. Proceedings of the 35th Conference on Innovative Applications of Artificial Intelligence (IAAI). 2023. AAAI. Innovative Application of AI Award.
-                            <br>
-                            <a href="https://doi.org/10.1609/aaai.v37i13.26845">[Link]</a>
-                            <a href="papers/iaai2023/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2211.09612">[arXiv]</a>
-                            <a href="papers/iaai2023/poster.pdf">[Poster]</a>
-                            <a href="papers/iaai2023/slides.pdf">[Slides]</a>
-                            <a href="papers/iaai2023/award.pdf">[Award]</a>
-                        </p>
-                        <p>
-                            [C19] <u>Marco Mussi</u>, Gianmarco Genalti, Francesco Trovò, Alessandro Nuara, Nicola Gatti and Marcello Restelli. Pricing the Long Tail by Explainable Product Aggregation and Monotonic Bandits. Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2022.
-                            <br>
-                            <a href="https://doi.org/10.1145/3534678.3539142">[Link]</a>
-                            <a href="papers/kdd2022/paper.pdf">[Paper]</a>
-                            <a href="papers/kdd2022/poster.pdf">[Poster]</a>
-                            <a href="papers/kdd2022/slides.pdf">[Slides]</a>
-                        </p>
-                        <h4>Journals</h4>
-                        <p>
-                            [J1] Gianmarco Genalti, <u>Marco Mussi</u>, Nicola Gatti, Marcello Restelli, Matteo Castiglioni and Alberto Maria Metelli. Bridging Rested and Restless Bandits with Graph-Triggering: Rising and Rotting. Journal of Machine Learning Research. 2026.
-                            <br>
-                            <a href="https://www.jmlr.org/papers/v27/24-1466.html">[Link]</a>
-                            <a href="papers/gtb2024/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2409.05980">[arXiv]</a>
-                        </p>
-                        <p>
-                            [J2] Gianmarco Tedeschi, <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. Trading-off Statistical and Computational Efficiency via W-step Markov Decision Processes: A Policy Gradient Approach. Machine Learning. 2026.
-                            <br>
-                            <a href="https://doi.org/10.1007/s10994-026-07085-z">[Link]</a>
-                            <a href="papers/mlj2026/paper.pdf">[Paper]</a>
-                            <a href="papers/mlj2026/poster.pdf">[Poster]</a>
-                            <a href="papers/mlj2026/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [J3] <u>Marco Mussi</u>, Alberto Maria Metelli, Marcello Restelli, Gianvito Losapio, Ricardo Jorge Bessa, Daniel Boos, Clark Borst, Giulia Leto, Alberto Castagna, Ricardo Chavarriaga, Duarte Dias, Adrian Egli, Andrina Eisenegger, Yassine El Manyari, Anton Fuxjäger, Joaquim Geraldes, Samira Hamouche, Mohamed Hassouna, Bruno Lemetayer, Milad Leyli-Abadi, Roman Liessner, Jonas Lundberg, Antoine Marot, Maroua Meddeb, Viola Schiaffonati, Manuel Schneider, Thilo Stadelmann, Julia Usher, Herke van Hoof, Jan Viebahn, Toni Waefler and Giacomo Zanotti. Human-AI Interaction in Safety-Critical Network Infrastructures. iScience. 2025.
-                            <br>
-                            <a href="https://doi.org/10.1016/j.isci.2025.113400">[Link]</a>
-                            <a href="papers/iscience2025/paper.pdf">[Paper]</a>
-                        </p>
-                        <p>
-                            [J4] <u>Marco Mussi</u>*, Simone Drago*, Marcello Restelli and Alberto Maria Metelli. Factored-Reward Bandits with Intermediate Observations: Regret Minimization and Best Arm Identification. Artificial Intelligence. 2025.
-                            <br>
-                            <a href="https://doi.org/10.1016/j.artint.2025.104362">[Link]</a>
-                            <a href="papers/aijfrb2025/paper.pdf">[Paper]</a>
-                        </p>
-                        <p>
-                            [J5] <u>Marco Mussi</u> and Alberto Maria Metelli. Generalizing the Regret: an Analysis of Lower and Upper Bounds. Journal of Artificial Intelligence Research. 2025.
-                            <br>
-                            <a href="https://doi.org/10.1613/jair.1.17614">[Link]</a>
-                            <a href="papers/jairgenregret2025/paper.pdf">[Paper]</a>
-                        </p>
-                        <p>
-                            [J6] <u>Marco Mussi</u>, Luigi Pellegrino, Oscar Francesco Pindaro, Marcello Restelli and Francesco Trovò. A Reinforcement Learning Controller Optimizing Costs and Battery State of Health in Smart Grids. Journal of Energy Storage. 2024.
-                            <br>
-                            <a href="https://doi.org/10.1016/j.est.2024.110572">[Link]</a>
-                            <a href="papers/est2024/paper.pdf">[Paper]</a>
-                        </p>
-                        <p>
-                            [J7] <u>Marco Mussi</u>, Davide Lombarda, Alberto Maria Metelli, Francesco Trovò and Marcello Restelli. ARLO: A Framework for Automated Reinforcement Learning. Expert Systems with Applications. 2023.
-                            <br>
-                            <a href="https://doi.org/10.1016/j.eswa.2023.119883">[Link]</a>
-                            <a href="papers/eswaautorl2023/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2205.10416">[arXiv]</a>
-                        </p>
-                        <p>
-                            [J8] <u>Marco Mussi</u>, Luigi Pellegrino, Marcello Restelli and Francesco Trovò. An Online State of Health Estimation Method for Lithium-Ion Batteries based on Time Partitioning and Data-Driven Model Identification. Journal of Energy Storage. 2022.
-                            <br>
-                            <a href="https://doi.org/10.1016/j.est.2022.105467">[Link]</a>
-                            <a href="papers/est2022/paper.pdf">[Paper]</a>
-                        </p>
-                        <p>
-                            [J9] <u>Marco Mussi</u>, Luigi Pellegrino, Marcello Restelli and Francesco Trovò. A voltage dynamic-based state of charge estimation method for batteries storage systems. Journal of Energy Storage. 2021.
-                            <br>
-                            <a href="https://doi.org/10.1016/j.est.2021.103309">[Link]</a>
-                            <a href="papers/est2021/paper.pdf">[Paper]</a>
-                        </p>
-                        <h4>Workshops</h4>
-                        <p>
-                            [W1] Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <u>Marco Mussi</u>. Combinatorial Bandits with Plackett-Luce Feedback: A Worst-Case Analysis. European Workshop on Reinforcement Learning (EWRL). 2026.
-                            <br>
-                            <a href="https://openreview.net/forum?id=bZXX66DMZm">[Link]</a>
-                            <a href="papers/ewrl2026cmab/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2026cmab/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W2] Diego Alovisetti, <u>Marco Mussi</u> and Alberto Maria Metelli. Variance-Aware Optimal Ranking in Log-Concave Random Utility Models. European Workshop on Reinforcement Learning (EWRL). 2026.
-                            <br>
-                            <a href="https://openreview.net/forum?id=QrzbZJ7nzz">[Link]</a>
-                            <a href="papers/ewrl2026rum/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2026rum/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W3] Simone Drago, <u>Marco Mussi</u>, Leonardo Bianconi and Alberto Maria Metelli. Modeling Incomparability: A New Rationality Paradigm for Preference-Based Reinforcement Learning. Workshop on Epistemic Intelligence in Machine Learning at the International Conference on Machine Learning (ICML). 2026.
-                            <br>
-                            <a href="papers/icmlworkshopmobt2026/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlworkshopmobt2026/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W4] Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <u>Marco Mussi</u>. Robust Learning to Rank from Incomplete Rankings under Positional Censoring. Workshop on Epistemic Intelligence in Machine Learning at the International Conference on Machine Learning (ICML). 2026.
-                            <br>
-                            <a href="papers/icmlworkshopltr2026/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlworkshopltr2026/poster.pdf">[Poster]</a>
-                            <a href="papers/icmlworkshopltr2026/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [W5] Federico Corso, <u>Marco Mussi</u> and Alberto Maria Metelli. Trading-off Reward Maximization and Stability in Sequential Decision Making. European Workshop on Reinforcement Learning (EWRL). 2025.
-                            <br>
-                            <a href="https://openreview.net/forum?id=5FSTwSgQQz">[Link]</a>
-                            <a href="papers/ewrl2025stability/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2025stability/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W6] Simone Drago, <u>Marco Mussi</u> and Alberto Maria Metelli. A Theoretical Perspective on Sequential Decision Making with Preference Feedback. European Workshop on Reinforcement Learning (EWRL). 2025.
-                            <br>
-                            <a href="https://openreview.net/forum?id=eD4GO3mSvL">[Link]</a>
-                            <a href="papers/ewrl2025preference/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2025preference/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W7] Alberto Maria Metelli, Simone Drago and <u>Marco Mussi</u>. A Novel Self-Normalized Bernstein-Like Dimension-Free Inequality and Regret Bounds for Generalized Kernelized Bandits. European Workshop on Reinforcement Learning (EWRL). 2025.
-                            <br>
-                            <a href="https://openreview.net/forum?id=kHglhH6Sd9">[Link]</a>
-                            <a href="papers/ewrl2025gkb/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2025gkb/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W8] Davide Salaorni, Vincenzo De Paola, Samuele Delpero, Giovanni Dispoto, Paolo Bonetti, Alessio Russo, Giuseppe Calcagno, Francesco Trovò, Matteo Papini, Alberto Maria Metelli, <u>Marco Mussi</u> and Marcello Restelli. Gym4ReaL: A Benchmark Suite for Evaluating Reinforcement Learning in Realistic Domains. European Workshop on Reinforcement Learning (EWRL). 2025.
-                            <br>
-                            <a href="https://openreview.net/forum?id=Aomqn4nAhK">[Link]</a>
-                            <a href="papers/ewrl2025lib/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2025lib/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W9] Carlo Fabrizio*, Gianvito Losapio*, <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. Power Grid Control with Graph-Based Distributed Reinforcement Learning. Workshop on Machine Learning for Sustainable Power Systems at the European Conference on Machine Learning (ECML). 2025.
-                            <br>
-                            <a href="papers/ecmlw2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2509.02861">[arXiv]</a>
-                            <a href="papers/ecmlw2025/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W10] Gianvito Losapio, Davide Beretta, <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. State and Action Factorization in Power Grids. Workshop on Machine Learning for Sustainable Power Systems at the European Conference on Machine Learning (ECML). 2024.
-                            <br>
-                            <a href="papers/ecmlw2024/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2409.04467">[arXiv]</a>
-                            <a href="papers/ecmlw2024/poster.pdf">[Poster]</a>
-                            <a href="papers/ecmlw2024/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [W11] Simone Drago and <u>Marco Mussi</u>. Open Problem: Tight Bounds for Bernoulli Rewards in Kernelized Multi-Armed Bandits. Workshop on Aligning Reinforcement Learning Experimentalists and Theorists at the International Conference on Machine Learning (ICML). 2024.
-                            <br>
-                            <a href="https://arlet-workshop.github.io/accepted_papers/">[Link]</a>
-                            <a href="papers/icmlarlet2024/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlarlet2024/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W12] Simone Drago, <u>Marco Mussi</u>, Marcello Restelli and Alberto Maria Metelli. Intermediate Observations in Factored-Reward Bandits. Adaptive and Learning Agents Workshop at the International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS). 2024.
-                            <br>
-                            <a href="https://openreview.net/forum?id=CIyAiUCfrj">[Link]</a>
-                            <a href="papers/alafrb2024/paper.pdf">[Paper]</a>
-                            <a href="papers/alafrb2024/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [W13] Francesco Bacchiocchi*, Gianmarco Genalti*, Davide Maran*, <u>Marco Mussi</u>*, Marcello Restelli, Nicola Gatti and Alberto Maria Metelli. Online Learning in Autoregressive Dynamics. European Workshop on Reinforcement Learning (EWRL). 2023.
-                            <br>
-                            <a href="https://openreview.net/forum?id=YrHpQWpwsy">[Link]</a>
-                            <a href="papers/ewrlarb2023/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrlarb2023/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W14] Alessandro Montenegro, <u>Marco Mussi</u>, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli. Stochastic Rising Bandits: A Best Arm Identification Approach. European Workshop on Reinforcement Learning (EWRL). 2023.
-                            <br>
-                            <a href="https://openreview.net/forum?id=Ctq0d9LEuT">[Link]</a>
-                            <a href="papers/ewrlbaisrb2023/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrlbaisrb2023/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W15] Alessandro Montenegro, <u>Marco Mussi</u>, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli. A Best Arm Identification Approach for Stochastic Rising Bandits. Workshop on New Frontiers in Learning, Control, and Dynamical Systems at International Conference on Machine Learning (ICML). 2023.
-                            <br>
-                            <a href="https://openreview.net/forum?id=k6aftfkuad">[Link]</a>
-                            <a href="papers/icmlw2023/paper.pdf">[Paper]</a>
-                            <a href="papers/icmlw2023/poster.pdf">[Poster]</a>
-                        </p>
-                        <p>
-                            [W16] Gianmarco Genalti, <u>Marco Mussi</u>, Alessandro Nuara and Nicola Gatti. Dynamic Pricing with Online Data Aggregation and Learning. European Workshop on Reinforcement Learning (EWRL). 2022.
-                            <br>
-                            <a href="https://ewrl.files.wordpress.com/2022/09/paper_dynamic_pricing_ewrl.pdf">[Link]</a>
-                            <a href="papers/ewrl2022/paper.pdf">[Paper]</a>
-                            <a href="papers/ewrl2022/poster.pdf">[Poster]</a>
-                            <a href="papers/ewrl2022/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            [W17] <u>Marco Mussi</u>, Alberto Maria Metelli and Marcello Restelli. Dynamical Linear Bandits for Long-Lasting Vanishing Rewards. Complex Feedback in Online Learning Workshop at International Conference on Machine Learning (ICML). 2022.
-                            <br>
-                            <a href="https://icml.cc/virtual/2022/18786">[Link]</a>
-                            <a href="papers/icml2022/paper.pdf">[Paper]</a>
-                            <a href="papers/icml2022/poster.pdf">[Poster]</a>
-                        </p>
-                        <h4>Book Chapters</h4>
-                        <p>
-                            [B1] <u>Marco Mussi</u>. Multi-Armed Bandits Algorithms for Pricing and Advertising. Special Topics in Information Technology. 2026.
-                            <br>
-                            <a href="https://doi.org/10.1007/978-3-032-12359-6_3">[Link]</a>
-                            <a href="papers/springerbriefsphd/paper.pdf">[Paper]</a>
-                        </p>
-                        <h4>Preprints</h4>
-                        <p>
-                            [P1] Diego Alovisetti, <u>Marco Mussi</u> and Alberto Maria Metelli. Learning a Ranking from Human Feedback in Log-Concave Random Utility Models. arXiv preprint, arXiv:2610.07973. 2026.
-                            <br>
-                            <a href="papers/offlinerum2026/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2610.07973">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P2] Alessandro Montenegro, Riccardo Venturelli, <u>Marco Mussi</u>, Matteo Papini and Alberto Maria Metelli. Reusing Past Samples in Proximal Policy Optimization: When and How Does It Help?. arXiv preprint, arXiv:2610.01399. 2026.
-                            <br>
-                            <a href="papers/rtppo2026/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2610.01399">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P3] <u>Marco Mussi</u> and Marcello Restelli. Online Dynamic Pricing of Complementary Products. arXiv preprint, arXiv:2511.22291. 2025.
-                            <br>
-                            <a href="papers/cpp2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2511.22291">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P4] Alberto Maria Metelli, Simone Drago and <u>Marco Mussi</u>. Generalized Kernelized Bandits: A Novel Self-Normalized Bernstein-Like Dimension-Free Inequality and Regret Bounds. arXiv preprint, arXiv:2508.01681. 2025.
-                            <br>
-                            <a href="papers/gkb2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2508.01681">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P5] Davide Salaorni, Vincenzo De Paola, Samuele Delpero, Giovanni Dispoto, Paolo Bonetti, Alessio Russo, Giuseppe Calcagno, Francesco Trovò, Matteo Papini, Alberto Maria Metelli, <u>Marco Mussi</u> and Marcello Restelli. Gym4ReaL: A Suite for Benchmarking Real-World Reinforcement Learning. arXiv preprint, arXiv:2507.00257. 2025.
-                            <br>
-                            <a href="papers/realgym2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2507.00257">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P6] Alessandro Montenegro, Leonardo Cesani, <u>Marco Mussi</u>, Matteo Papini and Alberto Maria Metelli. Learning Deterministic Policies with Policy Gradients in Constrained Markov Decision Processes. arXiv preprint, arXiv:2506.05953. 2025.
-                            <br>
-                            <a href="papers/dcpg2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2506.05953">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P7] Simone Drago, <u>Marco Mussi</u> and Alberto Maria Metelli. A refined Analysis of UCBVI. arXiv preprint, arXiv:2502.17370. 2025.
-                            <br>
-                            <a href="papers/arxivucbvi2025/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2502.17370">[arXiv]</a>
-                        </p>
-                        <p>
-                            [P8] <u>Marco Mussi</u>, Simone Drago and Alberto Maria Metelli. Open Problem: Tight Bounds for Kernelized Multi-Armed Bandits with Bernoulli Rewards. arXiv preprint, arXiv:2407.06321. 2024.
-                            <br>
-                            <a href="papers/bernoulliopenproblem2024/paper.pdf">[Paper]</a>
-                            <a href="https://doi.org/10.48550/arXiv.2407.06321">[arXiv]</a>
-                        </p>
-                        <h4>Technical Reports</h4>
-                        <p>
-                            [T1] <u>Marco Mussi</u>, Gianvito Losapio, Alberto Maria Metelli, Marcello Restelli, Ricardo Bessa, Antoine Marot, Daniel Boos, Clark Borst, Alberto Castagna, Duarte Dias, Adrian Egli, Andrina Eisenegger, Yassine El Manyari, Anton Fuxjäger, Samira Hamouche, Mohamed Hassouna, Bruno Lemetayer, Roman Liessner, Jonas Lundberg, Manuel Schneider, Irene Sturm, Julia Usher, Herke Van Hoof, Jan Viebahn and Toni Wäfler. Position paper on AI for the operation of critical energy and mobility network infrastructures. AI4REALNET. 2024.
-                            <br>
-                            <a href="https://ai4realnet.eu/deliverables/">[Link]</a>
-                            <a href="papers/ai4realnet2024/paper.pdf">[Report]</a>
-                        </p>
-                    </section>
-                    <section id="education" class="mt-5">
-                        <h2 class="display-5">Education</h2><hr>
-                        <p>
-                            <b>Ph.D. in Information Technology - <i>Politecnico di Milano</i> </b> (Nov 2020 - Jun 2024)<br>
-                            Focus on Reinforcement Learning and Online Learning.<br>
-                            <i>Supervisor:</i> Prof. Marcello Restelli
-                            <br>
-                            <a href="https://www.politesi.polimi.it/handle/10589/221772">[Link]</a>
-                            <a href="papers/phdthesis/thesis.pdf">[Thesis]</a>
-                            <a href="papers/phdthesis/slides.pdf">[Slides]</a>
-                        </p>
-                        <p>
-                            <b>M.Sc. in Computer Science and Engineering - <i>Politecnico di Milano</i> </b> (Sep 2017 - Dec 2019)<br>
-                            <i>Main focus:</i> Artificial Intelligence and Machine Learning <br>
-                            <i>Relevant coursework:</i> Machine Learning, Artificial Intelligence, Game Theory, Autonomous Agents and Multi- agent Systems, Foundations of Operational Research, Software Engineering, Principles of Programming Languages, Data Bases II
-                        </p>
-                        <p>
-                            <b>B.Sc. in Engineering of Computing Systems - <i>Politecnico di Milano</i> </b> (Sep 2014 - Jul 2017)<br>
-                            <i>Relevant coursework:</i> Software Engineering, Theoretical Computer Science, Communication Networks and Internet, Information Systems, Data Bases I, Computer Architecture and Operating Systems, Automatic Control, Calculus I, Calculus II, Linear Algebra and Geometry, Logics and Algebra, Statistics and Probability, Physics, Applied Physics
-                        </p>
-                        <p>
-                            <b>High School Diploma in Computer Science - <i>IIS Galileo Galilei Crema</i> </b> (Sep 2008 - Jul 2014)<br>
-                            <i>Main Focus:</i> C, Java, HTML, CSS, Javascript
-                        </p>
-                    </section>
-                    <section id="experience" class="mt-5">
-                        <h2 class="display-5">Experience</h2><hr>
-                        <p>
-                            <b>Assistant Professor - <i>Politecnico di Milano, Dipartimento di Elettronica, Informazione e Bioingegneria</i> </b> (Jan 2026 - now)
-                        </p>
-                        <p>
-                            <b>Postdoctoral Researcher - <i>Politecnico di Milano</i> </b> (Jun 2024 - Jan 2026)<br>
-                            <i>Supervisor:</i> Prof. Marcello Restelli
-                        </p>
-                        <p>
-                            <b>Research Scientist - <i>ML cube</i> </b> (Nov 2020 - Jun 2024)<br>
-                            <i>Goal:</i> develop algorithms for dynamic pricing and advertising optimization
-                        </p>
-                        <p>
-                            <b>Research Assistant - <i>Politecnico di Milano</i> </b> (Jan 2020 - Oct 2020)<br>
-                            <i>Supervisor:</i> Prof. Marcello Restelli
-                        </p>
-                    </section>
-                    <section id="contacts" class="mt-5">
-                        <h2 class="display-5">Contacts</h2><hr>
-                        <p>
-                            <b>Email </b><br><i> marco DOT mussi AT polimi DOT it</i>
-                        </p>
-                        </p>
-                        <h4>Office</h4>
-                        <p>
-                            Office 19, First Floor of Building 21 <br>
-                            Dipartimento di Elettronica, Informazione e Bioingegneria <br>
-                            Politecnico di Milano <br>
-                            Via Ponzio 34/5, Milan, 20133, Italy
-                        </p>
-                    </section>
-                    <br>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <span class="text-muted"> © 2026 - Marco Mussi </span>
-                <br><br>
-            </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bibtex.js"></script>
-    </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marco Mussi</title>
+<meta name="description" content="Marco Mussi, Assistant Professor at Politecnico di Milano. Research on online learning and reinforcement learning.">
+<meta name="author" content="Marco Mussi">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Marco Mussi">
+<meta property="og:description" content="Assistant Professor at Politecnico di Milano. Research on online learning and reinforcement learning.">
+<meta property="og:image" content="https://marcomussi.github.io/img/profile.jpg">
+<meta name="theme-color" content="#fcfcfd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101217" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234338ca'/><text x='16' y='22.5' font-family='Inter,Arial,sans-serif' font-size='19' font-weight='700' text-anchor='middle' fill='white'>M</text></svg>">
+<script>
+  /* Apply the saved light/dark choice before the page paints. */
+  try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* =====================================================================
+   0. Inter, served from fonts/ (SIL Open Font License, see fonts/OFL.txt).
+      One variable file per character set: the browser downloads only what the page uses.
+   ===================================================================== */
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url(fonts/inter-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap;
+  src: url(fonts/inter-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* =====================================================================
+   1. Design tokens. Each colour is light-dark(<light theme>, <dark theme>);
+      the tints (bands, lines, highlights) are all derived from --accent.
+   ===================================================================== */
+:root {
+  color-scheme: light dark;
+  --accent: light-dark(#4338ca, #a9b4ff);
+  --bg:     light-dark(#fcfcfd, #101217);
+  --card:   light-dark(#ffffff, #171a21);
+  --ink:    light-dark(#15171c, #e7e9ef);
+  --muted:  light-dark(#565c6b, #a3a9b8);
+  --band:   color-mix(in srgb, var(--accent) 5%, light-dark(#f4f5f8, #14161c));
+  --line:   color-mix(in srgb, var(--accent) 14%, light-dark(#e3e5ea, #252933));
+  --accent-soft: color-mix(in srgb, var(--accent) 13%, var(--bg));
+  --glow:   color-mix(in srgb, var(--accent) 10%, transparent);
+
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --gutter: 9rem;       /* left column: paper labels and dates */
+  --gap: 2rem;
+  --measure: 46rem;     /* text column */
+  --indent: calc(var(--gutter) + var(--gap));
+  --page: calc(var(--indent) + var(--measure));
+  --edge: max(1.25rem, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px));
+  --bar: 3.75rem;       /* height of the top bar */
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"]  { color-scheme: dark; }
+
+
+/* =====================================================================
+   2. Base
+   ===================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: calc(var(--bar) + 1rem); }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--font);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, p, ol, ul, address { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+}
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+::selection { background: var(--accent-soft); }
+.icon { width: 1.1rem; height: 1.1rem; flex: none; }
+.skip { position: absolute; left: var(--edge); top: -3rem; z-index: 20; padding: 0.5rem 0.75rem; background: var(--card); }
+.skip:focus { top: 0.75rem; }
+.wrap { width: min(100% - 2 * var(--edge), var(--page)); margin-inline: auto; }
+
+/* =====================================================================
+   3. Top bar
+   ===================================================================== */
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.topbar .wrap { min-height: var(--bar); display: flex; align-items: center; gap: 1.5rem; }
+.brand { font: 650 1.15rem/1.2 var(--font); letter-spacing: -0.02em; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.nav { margin-left: auto; display: flex; gap: 1.5rem; overflow-x: auto; scrollbar-width: none; font-size: 0.92rem; font-weight: 500; }
+.nav a { padding-block: 0.35rem; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.nav a:hover { color: var(--ink); }
+.nav a[aria-current] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--accent); }
+.theme-toggle {
+  flex: none; display: grid; place-items: center;
+  width: 2.25rem; height: 2.25rem; padding: 0;
+  color: var(--ink); background: transparent;
+  border: 1px solid var(--line); border-radius: 50%; cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--accent); background: var(--accent-soft); }
+
+/* =====================================================================
+   4. Hero: name, role, bio and links on the left, round photo on the right
+   ===================================================================== */
+.hero { background: radial-gradient(44rem 28rem at 85% 30%, var(--glow), transparent 70%); }
+.hero .wrap {
+  display: grid; grid-template-columns: minmax(0, 1fr) 14.4rem; column-gap: 3rem; align-items: center;
+  padding-block: 4rem 4.5rem;
+}
+/* Round photo with a thin indigo ring */
+.portrait {
+  order: 2; width: 100%; height: auto; margin: 0;
+  aspect-ratio: 1; object-fit: cover;
+  border-radius: 50%; padding: 5px; border: 1.5px solid var(--accent); background: var(--bg);
+}
+.name { font: 650 clamp(2.25rem, 1.6rem + 2.8vw, 3.5rem)/1.05 var(--font); letter-spacing: -0.04em; }
+.role { margin-top: 0.6rem; font-size: 1.25rem; line-height: 1.4; color: var(--muted); }
+.bio { margin-top: 1.5rem; max-width: 40em; }
+.links { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; margin-top: 1.6rem; font-size: 0.95rem; font-weight: 550; }
+.links a { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--ink); text-decoration: none; }
+.links a .icon { color: var(--accent); }
+.links a:hover { color: var(--accent); }
+
+/* =====================================================================
+   5. Sections
+   ===================================================================== */
+.section { padding-block: 4.5rem; border-top: 1px solid var(--line); }
+.section .wrap { padding-left: var(--indent); }
+.band { background-color: var(--band); }
+.section-title { margin-bottom: 1.75rem; font: 650 2rem/1.15 var(--font); letter-spacing: -0.03em; }
+
+/* =====================================================================
+   6. Publications: label (C1, J1, ...) in the left column, grouped by year
+   ===================================================================== */
+.pub-index { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: -0.4rem 0 2.75rem; }
+.pub-index a {
+  display: inline-flex; align-items: baseline; gap: 0.4rem;
+  padding: 0.3rem 0.75rem; font-size: 0.85rem; font-weight: 500; color: var(--ink); text-decoration: none;
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+}
+.pub-index a:hover { border-color: var(--accent); color: var(--accent); }
+.count { font: 500 0.78rem/1 var(--font); color: var(--muted); font-variant-numeric: tabular-nums; }
+.pub-group + .pub-group { margin-top: 3.5rem; }
+.group-title { display: flex; align-items: baseline; gap: 0.6rem; font: 650 1.5rem/1.25 var(--font); letter-spacing: -0.025em; }
+.group-title .count { font-size: 0.9rem; }
+.year {
+  display: flex; align-items: center; gap: 0.75rem; margin: 1.1rem 0 1.1rem;
+  font: 600 0.82rem/1 var(--font); letter-spacing: 0.03em; color: var(--accent); font-variant-numeric: tabular-nums;
+}
+.year::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.pubs + .year { margin-top: 2rem; }
+.pubs { display: grid; gap: 1.5rem; }
+.pub { position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.9rem; }
+.pub .title { flex-basis: 100%; font: 600 1.1rem/1.4 var(--font); letter-spacing: -0.012em; text-wrap: pretty; }
+.pub .authors { flex-basis: 100%; font-size: 0.95rem; color: var(--muted); }
+.authors b {
+  font-weight: 600; color: var(--ink);
+  text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 0.22em;
+}
+.venue { font-size: 0.92rem; font-weight: 600; }
+.tag {
+  padding: 0.25rem 0.55rem; border-radius: 999px;
+  font: 600 0.68rem/1 var(--font); letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-soft);
+}
+/* Awards and honours (Oral, Spotlight, ...): a small pill right after the venue */
+.award {
+  display: inline-flex; align-items: baseline; gap: 0.35rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.5rem; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 600; color: var(--accent); background: var(--accent-soft);
+}
+.award::before {
+  content: ""; width: 1em; height: 1em; flex: none; align-self: center; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='9' r='6'/%3E%3Cpath d='m8.2 13.6-1.2 8.4 5-3 5 3-1.2-8.4'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='9' r='6'/%3E%3Cpath d='m8.2 13.6-1.2 8.4 5-3 5 3-1.2-8.4'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.pub > a:not(.label), .entry > a { font-size: 0.9rem; font-weight: 550; text-decoration: none; }
+.pub > a:not(.label):hover, .entry > a:hover { text-decoration: underline; }
+.label {
+  position: absolute; right: calc(100% + var(--gap) - 0.4rem); top: 0.12rem;
+  padding: 0.3rem 0.4rem; border-radius: 5px;
+  font: 650 0.85rem/1 var(--font); letter-spacing: 0.02em; font-variant-numeric: tabular-nums;
+  color: var(--accent); text-decoration: none;
+}
+.label:hover, .pub:target .label { background: var(--accent-soft); }
+.pub-note { margin-top: 2.75rem; font-size: 0.9rem; color: var(--muted); }
+
+/* =====================================================================
+   7. Experience and education: dates in the left column, on a timeline
+   ===================================================================== */
+.entries { --entry-gap: 1.6rem; display: grid; gap: var(--entry-gap); }
+.entry { position: relative; --rail: calc(var(--gap) / -2); --dot-y: calc(0.75rem - 5px); }
+.entry > span { display: block; }
+.when {
+  position: absolute; right: calc(100% + var(--gap)); top: 0.2rem; width: var(--gutter);
+  text-align: right; white-space: nowrap;
+  font: 500 0.82rem/1.45 var(--font); color: var(--muted); font-variant-numeric: tabular-nums;
+}
+.what { font: 600 1.08rem/1.4 var(--font); letter-spacing: -0.01em; }
+.where { margin-top: 0.1rem; }
+.note { margin-top: 0.15rem; font-size: 0.95rem; color: var(--muted); }
+.entry > a { display: inline-block; margin: 0.45rem 0.9rem 0 0; }
+details { margin-top: 0.3rem; font-size: 0.92rem; color: var(--muted); }
+summary { width: fit-content; cursor: pointer; font-weight: 550; color: var(--accent); }
+details p { margin-top: 0.35rem; max-width: 40em; }
+
+/* A dot per role on a line between dates and text; the current role (dates ending in "now") is highlighted */
+.entry::before {
+  content: ""; position: absolute; left: calc(var(--rail) - 5px); top: var(--dot-y);
+  width: 10px; height: 10px; border-radius: 50%; border: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+}
+.entry:not(:last-child)::after {
+  content: ""; position: absolute; left: calc(var(--rail) - 1px); width: 2px; background: var(--line);
+  top: calc(var(--dot-y) + 13px); bottom: calc(3px - var(--entry-gap) - var(--dot-y));
+}
+.is-current::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.is-current .when { color: var(--accent); font-weight: 600; }
+
+/* =====================================================================
+   8. Footer: contact details on a tinted band
+   ===================================================================== */
+.site-footer {
+  position: relative; isolation: isolate; overflow: hidden;
+  padding-block: 4.75rem 2rem;
+  background: var(--band);
+  border-top: 1px solid var(--line);
+}
+/* A soft glow and a faint dot grid behind the content, fading towards the bottom. */
+.site-footer::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(42rem 24rem at 88% -10%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 70%),
+    radial-gradient(circle, color-mix(in srgb, var(--ink) 12%, transparent) 1px, transparent 1.5px) 0 0 / 22px 22px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 25%, transparent 90%);
+          mask-image: linear-gradient(to bottom, #000 25%, transparent 90%);
+}
+.footer-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 2.5rem 3.5rem; align-items: start; }
+.eyebrow { font: 600 0.75rem/1 var(--font); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.footer-title { margin-top: 0.9rem; font: 650 clamp(2.25rem, 1.6rem + 2.4vw, 3.25rem)/1.05 var(--font); letter-spacing: -0.04em; }
+.footer-email {
+  display: inline-block; margin-top: 1.75rem; padding-bottom: 0.2rem;
+  font-size: 1.3rem; font-weight: 550; letter-spacing: -0.01em; color: var(--ink); text-decoration: none;
+  background: linear-gradient(var(--accent), var(--accent)) left bottom / 100% 2px no-repeat;
+  transition: color 0.2s;
+}
+.footer-email:hover { color: var(--accent); }
+.copy {
+  display: flex; align-items: center; gap: 0.45rem; margin-top: 1.1rem;
+  padding: 0.45rem 0.9rem; font: 500 0.85rem/1 var(--font); color: var(--ink); cursor: pointer;
+  background: transparent; border: 1px solid var(--line); border-radius: 999px;
+}
+.copy[hidden] { display: none; }
+.copy:hover { border-color: var(--accent); color: var(--accent); }
+.copy .icon { width: 0.95rem; height: 0.95rem; }
+.office {
+  overflow: hidden; border-radius: 16px;
+  background: color-mix(in srgb, var(--card) 65%, transparent);
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 40px -28px rgb(0 0 0 / 0.25);
+}
+address { font-style: normal; line-height: 1.5; }
+/* A stylised map (decorative, not a real map) on top of the office box */
+.map-art {
+  --road: color-mix(in srgb, var(--card) 92%, transparent);
+  --street: color-mix(in srgb, var(--card) 38%, transparent);
+  position: relative; height: 8rem; border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(to bottom, transparent 60%, var(--road) 60% 68%, transparent 68%),
+    linear-gradient(116deg, transparent 41%, var(--road) 41% 45%, transparent 45%),
+    radial-gradient(1.9rem 1.9rem at 80% 34%, color-mix(in srgb, var(--accent) 22%, var(--card)) 97%, transparent),
+    linear-gradient(90deg, var(--street) 2px, transparent 2px) 0 0 / 34px 100%,
+    linear-gradient(var(--street) 2px, transparent 2px) 0 0 / 100% 30px,
+    color-mix(in srgb, var(--accent) 13%, var(--card));
+}
+.map-chip {
+  position: absolute; left: 1rem; top: 1rem; padding: 0.35rem 0.6rem; border-radius: 999px;
+  font: 600 0.68rem/1 var(--font); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  background: color-mix(in srgb, var(--card) 80%, transparent); border: 1px solid var(--line);
+}
+.map-pin {
+  position: absolute; left: 36%; top: 46%; translate: -50% -50%;
+  display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 50%;
+  color: light-dark(#fff, #11132b); background: var(--accent);
+  box-shadow: 0 0 0 4px var(--card);
+}
+.office address { display: grid; padding: 1.2rem 1.6rem 1.5rem; }
+.uni { font-size: 1.25rem; font-weight: 650; letter-spacing: -0.02em; line-height: 1.3; }
+.dept { margin-top: 0.1rem; font-size: 0.95rem; color: var(--muted); }
+.place { margin-top: 0.7rem; font-size: 0.92rem; color: var(--muted); }
+.place b { font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+.footer-bottom {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.25rem;
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  font-size: 0.88rem; color: var(--muted);
+}
+.socials { display: flex; gap: 0.5rem; margin-left: auto; }
+.socials a { display: grid; place-items: center; width: 2.3rem; height: 2.3rem; color: var(--ink); border: 1px solid var(--line); border-radius: 50%; }
+.socials a:hover { color: var(--accent); border-color: var(--accent); }
+/* "Back to top": a pill with the arrow in an indigo circle that nudges up on hover */
+.to-top {
+  display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.3rem 0.35rem 0.3rem 0.95rem;
+  font-weight: 550; color: var(--ink); text-decoration: none;
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+}
+.to-top .icon {
+  width: 1.65rem; height: 1.65rem; padding: 0.32rem; border-radius: 50%;
+  color: light-dark(#fff, #11132b); background: var(--accent); transition: translate 0.2s;
+}
+.to-top:hover { border-color: var(--accent); }
+.to-top:hover .icon { translate: 0 -2px; }
+
+.copyright b { font-weight: 600; color: var(--ink); }
+
+/* =====================================================================
+   9. Smaller screens, reduced motion, print
+   ===================================================================== */
+@media (max-width: 760px) {
+  :root { --gutter: 2.75rem; --gap: 0.85rem; --indent: 0px; }
+  html { scroll-padding-top: 6.5rem; }
+  .topbar .wrap { flex-wrap: wrap; row-gap: 0; padding-top: 0.5rem; }
+  .brand { flex: 1; }
+  .nav {
+    order: 3; flex-basis: 100%; margin: 0; gap: 1.25rem; padding-bottom: 0.2rem;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent);
+  }
+  .hero .wrap { display: block; padding-top: 2.25rem; }
+  .portrait { width: 9.9rem; margin: 0 0 2rem; }
+  .section { padding-block: 3.25rem; }
+  .pubs { padding-left: calc(var(--gutter) + var(--gap)); }
+  .pub .title { font-size: 1.05rem; }
+  .when { position: static; width: auto; margin-bottom: 0.1rem; text-align: left; }
+  .entries { padding-left: 1.5rem; }
+  .entry { --rail: -0.8rem; --dot-y: calc(0.62rem - 5px); }
+  .site-footer { padding-top: 3.5rem; }
+  .footer-grid { grid-template-columns: minmax(0, 1fr); }
+  .footer-bottom { margin-top: 3rem; }
+  .footer-bottom p { flex-basis: 100%; }
+  .socials { margin-left: 0; }
+  .to-top { margin-left: auto; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print {
+  :root { color-scheme: light; }
+  .topbar, .theme-toggle, .pub-index, .skip, .copy, .socials, .to-top, .map-art { display: none !important; }
+  .hero, .band, .site-footer { background: none !important; }
+  .site-footer::before { display: none; }
+  .section { padding-block: 1.25rem; }
+  a { color: inherit; text-decoration: none; }
+  .pub, .entry { break-inside: avoid; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Icons, drawn once and reused with <svg class="icon"><use href="#i-..."/></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol>
+  <symbol id="i-cv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-scholar" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></symbol>
+  <symbol id="i-github" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+  <symbol id="i-contrast" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-5.8-7-11.5a7 7 0 0 1 14 0c0 5.7-7 11.5-7 11.5z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Marco Mussi</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Light / dark"><svg class="icon"><use href="#i-contrast"/></svg></button>
+  </div>
+</header>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="portrait" src="img/profile.jpg" alt="Portrait of Marco Mussi" width="800" height="800">
+    <div>
+      <h1 class="name">Marco Mussi</h1>
+      <p class="role">Assistant Professor, Politecnico di Milano</p>
+      <p class="bio">I am Assistant Professor with the Dipartimento di Elettronica, Informazione e Bioingegneria, in the Artificial Intelligence and Robotic Laboratory of Politecnico di Milano. My research focuses on artificial intelligence and machine learning, particularly on foundational aspects of online learning and reinforcement learning.</p>
+      <ul class="links">
+        <li><a href="#contact" data-user="marco.mussi" data-domain="polimi.it"><svg class="icon"><use href="#i-mail"/></svg>Email</a></li>
+        <li><a href="CV_20261010.pdf"><svg class="icon"><use href="#i-cv"/></svg>Curriculum Vitae</a></li>
+        <li><a href="https://scholar.google.com/citations?user=3gca-JUAAAAJ&hl=en"><svg class="icon"><use href="#i-scholar"/></svg>Google Scholar</a></li>
+        <li><a href="https://www.github.com/marcomussi"><svg class="icon"><use href="#i-github"/></svg>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/marcomussi95/"><svg class="icon"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================== PUBLICATIONS ============================== -->
+  <section class="section" id="publications" aria-labelledby="publications-title">
+    <div class="wrap">
+      <h2 class="section-title" id="publications-title">Publications</h2>
+      <nav class="pub-index" aria-label="Publication types">
+        <a href="#conferences">Conferences <span class="count" data-count="C"></span></a>
+        <a href="#journals">Journals <span class="count" data-count="J"></span></a>
+        <a href="#workshops">Workshops <span class="count" data-count="W"></span></a>
+        <a href="#book-chapters">Book Chapters <span class="count" data-count="B"></span></a>
+        <a href="#preprints">Preprints <span class="count" data-count="P"></span></a>
+        <a href="#reports">Reports <span class="count" data-count="T"></span></a>
+      </nav>
+
+      <div class="pub-group" id="conferences" data-prefix="C">
+        <h3 class="group-title">International Conferences <span class="count" data-count="C"></span></h3>
+
+        <h4 class="year">2026</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Worst-Case Regret Bounds for Combinatorial Bandits with Ranking Feedback</span>
+            <span class="authors">Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <b>Marco Mussi</b></span>
+            <span class="venue">NeurIPS 2026</span>
+            <span class="tag">To appear</span>
+            <a href="">Link</a>
+            <a href="papers/neurips2026cmab/paper.pdf">Paper</a>
+            <a href="papers/neurips2026cmab/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Online Compatible Reward Identification from Preference Feedback</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2026</span>
+            <a href="https://proceedings.mlr.press/v306/drago26a.html">Link</a>
+            <a href="papers/icmlcompreward2026/paper.pdf">Paper</a>
+            <a href="papers/icmlcompreward2026/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Fast Mixing Steady-State Control in Markov Decision Processes</span>
+            <span class="authors">Federico Corso, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2026</span>
+            <a href="https://proceedings.mlr.press/v306/corso26a.html">Link</a>
+            <a href="papers/icmlstability2026/paper.pdf">Paper</a>
+            <a href="papers/icmlstability2026/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Learning to Rank from Incomplete Rankings</span>
+            <span class="authors">Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <b>Marco Mussi</b></span>
+            <span class="venue">ICML 2026</span>
+            <a href="https://proceedings.mlr.press/v306/migali26a.html">Link</a>
+            <a href="papers/icmlltr2026/paper.pdf">Paper</a>
+            <a href="papers/icmlltr2026/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Reusing Trajectories in Policy Gradients Enables Fast Convergence</span>
+            <span class="authors">Alessandro Montenegro, Federico Mansutti, <b>Marco Mussi</b>, Matteo Papini and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2026</span>
+            <a href="https://proceedings.mlr.press/v306/montenegro26a.html">Link</a>
+            <a href="papers/rpg2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2506.06178">arXiv</a>
+            <a href="papers/rpg2025/poster.pdf">Poster</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2025</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Tightening Regret Lower and Upper Bounds in Restless Rising Bandits</span>
+            <span class="authors">Cristiano Migali, <b>Marco Mussi</b>, Gianmarco Genalti and Alberto Maria Metelli</span>
+            <span class="venue">NeurIPS 2025</span>
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/1aa670dafbd4b32ebf483f8372e612c5-Abstract-Conference.html">Link</a>
+            <a href="papers/neurips2025srb/paper.pdf">Paper</a>
+            <a href="papers/neurips2025srb/poster.pdf">Poster</a>
+            <a href="papers/neurips2025srb/slides.pdf">Slides</a>
+          </li>
+          <li class="pub">
+            <span class="title">Sleeping Reinforcement Learning</span>
+            <span class="authors">Simone Drago*, <b>Marco Mussi</b>* and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2025</span>
+            <a href="https://proceedings.mlr.press/v267/drago25a.html">Link</a>
+            <a href="papers/icmlsleeping2025/paper.pdf">Paper</a>
+            <a href="papers/icmlsleeping2025/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Towards Theoretical Understanding of Sequential Decision Making with Preference Feedback</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2025</span>
+            <a href="https://proceedings.mlr.press/v267/drago25b.html">Link</a>
+            <a href="papers/icmlpref2025/paper.pdf">Paper</a>
+            <a href="papers/icmlpref2025/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Convergence Analysis of Policy Gradient Methods with Dynamic Stochasticity</span>
+            <span class="authors">Alessandro Montenegro, <b>Marco Mussi</b>, Matteo Papini and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2025</span>
+            <a href="https://proceedings.mlr.press/v267/montenegro25a.html">Link</a>
+            <a href="papers/icmlpes2025/paper.pdf">Paper</a>
+            <a href="papers/icmlpes2025/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Position: Constants are Critical in Regret Bounds for Reinforcement Learning</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2025</span>
+            <a href="https://proceedings.mlr.press/v267/drago25c.html">Link</a>
+            <a href="papers/icmlposition2025/paper.pdf">Paper</a>
+            <a href="papers/icmlposition2025/poster.pdf">Poster</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2024</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Last-Iterate Global Convergence of Policy Gradients for Constrained Reinforcement Learning</span>
+            <span class="authors">Alessandro Montenegro, <b>Marco Mussi</b>, Matteo Papini and Alberto Maria Metelli</span>
+            <span class="venue">NeurIPS 2024</span>
+            <a href="https://papers.neurips.cc/paper_files/paper/2024/hash/e47470631adb188a30f14c9738fe157b-Abstract-Conference.html">Link</a>
+            <a href="papers/neuripscrl2024/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2407.10775">arXiv</a>
+            <a href="papers/neuripscrl2024/poster.pdf">Poster</a>
+            <a href="papers/neuripscrl2024/slides.pdf">Slides</a>
+          </li>
+          <li class="pub">
+            <span class="title">Factored-Reward Bandits with Intermediate Observations</span>
+            <span class="authors"><b>Marco Mussi</b>*, Simone Drago*, Marcello Restelli and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2024</span>
+            <a href="https://proceedings.mlr.press/v235/mussi24a.html">Link</a>
+            <a href="papers/icmlfrb2024/paper.pdf">Paper</a>
+            <a href="papers/icmlfrb2024/poster.pdf">Poster</a>
+            <a href="papers/icmlfrb2024/slides.pdf">Slides</a>
+          </li>
+          <li class="pub">
+            <span class="title">Best Arm Identification for Stochastic Rising Bandits</span>
+            <span class="authors"><b>Marco Mussi</b>, Alessandro Montenegro, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2024</span>
+            <span class="award">Spotlight</span>
+            <a href="https://proceedings.mlr.press/v235/mussi24b.html">Link</a>
+            <a href="papers/arxivbaisrb2023/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2302.07510">arXiv</a>
+            <a href="papers/arxivbaisrb2023/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Learning Optimal Deterministic Policies with Stochastic Policy Gradients</span>
+            <span class="authors">Alessandro Montenegro, <b>Marco Mussi</b>, Alberto Maria Metelli and Matteo Papini</span>
+            <span class="venue">ICML 2024</span>
+            <span class="award">Spotlight</span>
+            <a href="https://proceedings.mlr.press/v235/montenegro24a.html">Link</a>
+            <a href="papers/icmldpol2024/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2405.02235">arXiv</a>
+            <a href="papers/icmldpol2024/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Graph-Triggered Rising Bandits</span>
+            <span class="authors">Gianmarco Genalti, <b>Marco Mussi</b>, Nicola Gatti, Marcello Restelli, Matteo Castiglioni and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2024</span>
+            <a href="https://proceedings.mlr.press/v235/genalti24a.html">Link</a>
+            <a href="papers/icmlgtrb2024/paper.pdf">Paper</a>
+            <a href="papers/icmlgtrb2024/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Autoregressive Bandits</span>
+            <span class="authors">Francesco Bacchiocchi*, Gianmarco Genalti*, Davide Maran*, <b>Marco Mussi</b>*, Marcello Restelli, Nicola Gatti and Alberto Maria Metelli</span>
+            <span class="venue">AISTATS 2024</span>
+            <a href="https://proceedings.mlr.press/v238/bacchiocchi24a.html">Link</a>
+            <a href="papers/arb/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2212.06251">arXiv</a>
+            <a href="papers/arb/poster.pdf">Poster</a>
+            <a href="papers/arb/slides.pdf">Slides</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2023</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Dynamical Linear Bandits</span>
+            <span class="authors"><b>Marco Mussi</b>, Alberto Maria Metelli and Marcello Restelli</span>
+            <span class="venue">ICML 2023</span>
+            <a href="https://proceedings.mlr.press/v202/mussi23a.html">Link</a>
+            <a href="papers/icmldlb2023/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2211.08997">arXiv</a>
+            <a href="papers/icmldlb2023/poster.pdf">Poster</a>
+            <a href="papers/icmldlb2023/slides.pdf">Slides</a>
+          </li>
+          <li class="pub">
+            <span class="title">Dynamic Pricing with Volume Discounts in Online Settings</span>
+            <span class="authors"><b>Marco Mussi</b>*, Gianmarco Genalti*, Alessandro Nuara, Francesco Trovò, Marcello Restelli and Nicola Gatti</span>
+            <span class="venue">IAAI 2023</span>
+            <span class="award">Innovative Application of AI Award</span>
+            <a href="https://doi.org/10.1609/aaai.v37i13.26845">Link</a>
+            <a href="papers/iaai2023/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2211.09612">arXiv</a>
+            <a href="papers/iaai2023/poster.pdf">Poster</a>
+            <a href="papers/iaai2023/slides.pdf">Slides</a>
+            <a href="papers/iaai2023/award.pdf">Award</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2022</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Pricing the Long Tail by Explainable Product Aggregation and Monotonic Bandits</span>
+            <span class="authors"><b>Marco Mussi</b>, Gianmarco Genalti, Francesco Trovò, Alessandro Nuara, Nicola Gatti and Marcello Restelli</span>
+            <span class="venue">KDD 2022</span>
+            <span class="award">Oral</span>
+            <a href="https://doi.org/10.1145/3534678.3539142">Link</a>
+            <a href="papers/kdd2022/paper.pdf">Paper</a>
+            <a href="papers/kdd2022/poster.pdf">Poster</a>
+            <a href="papers/kdd2022/slides.pdf">Slides</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group" id="journals" data-prefix="J">
+        <h3 class="group-title">Journals <span class="count" data-count="J"></span></h3>
+
+        <h4 class="year">2026</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Bridging Rested and Restless Bandits with Graph-Triggering: Rising and Rotting</span>
+            <span class="authors">Gianmarco Genalti, <b>Marco Mussi</b>, Nicola Gatti, Marcello Restelli, Matteo Castiglioni and Alberto Maria Metelli</span>
+            <span class="venue">Journal of Machine Learning Research, 2026</span>
+            <a href="https://www.jmlr.org/papers/v27/24-1466.html">Link</a>
+            <a href="papers/gtb2024/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2409.05980">arXiv</a>
+          </li>
+          <li class="pub">
+            <span class="title">Trading-off Statistical and Computational Efficiency via W-step Markov Decision Processes: A Policy Gradient Approach</span>
+            <span class="authors">Gianmarco Tedeschi, <b>Marco Mussi</b>, Alberto Maria Metelli and Marcello Restelli</span>
+            <span class="venue">Machine Learning, 2026</span>
+            <a href="https://doi.org/10.1007/s10994-026-07085-z">Link</a>
+            <a href="papers/mlj2026/paper.pdf">Paper</a>
+            <a href="papers/mlj2026/poster.pdf">Poster</a>
+            <a href="papers/mlj2026/slides.pdf">Slides</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2025</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Human-AI Interaction in Safety-Critical Network Infrastructures</span>
+            <span class="authors"><b>Marco Mussi</b>, Alberto Maria Metelli, Marcello Restelli, Gianvito Losapio, Ricardo Jorge Bessa, Daniel Boos, Clark Borst, Giulia Leto, Alberto Castagna, Ricardo Chavarriaga, Duarte Dias, Adrian Egli, Andrina Eisenegger, Yassine El Manyari, Anton Fuxjäger, Joaquim Geraldes, Samira Hamouche, Mohamed Hassouna, Bruno Lemetayer, Milad Leyli-Abadi, Roman Liessner, Jonas Lundberg, Antoine Marot, Maroua Meddeb, Viola Schiaffonati, Manuel Schneider, Thilo Stadelmann, Julia Usher, Herke van Hoof, Jan Viebahn, Toni Waefler and Giacomo Zanotti</span>
+            <span class="venue">iScience, 2025</span>
+            <a href="https://doi.org/10.1016/j.isci.2025.113400">Link</a>
+            <a href="papers/iscience2025/paper.pdf">Paper</a>
+          </li>
+          <li class="pub">
+            <span class="title">Factored-Reward Bandits with Intermediate Observations: Regret Minimization and Best Arm Identification</span>
+            <span class="authors"><b>Marco Mussi</b>*, Simone Drago*, Marcello Restelli and Alberto Maria Metelli</span>
+            <span class="venue">Artificial Intelligence, 2025</span>
+            <a href="https://doi.org/10.1016/j.artint.2025.104362">Link</a>
+            <a href="papers/aijfrb2025/paper.pdf">Paper</a>
+          </li>
+          <li class="pub">
+            <span class="title">Generalizing the Regret: an Analysis of Lower and Upper Bounds</span>
+            <span class="authors"><b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">Journal of Artificial Intelligence Research, 2025</span>
+            <a href="https://doi.org/10.1613/jair.1.17614">Link</a>
+            <a href="papers/jairgenregret2025/paper.pdf">Paper</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2024</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">A Reinforcement Learning Controller Optimizing Costs and Battery State of Health in Smart Grids</span>
+            <span class="authors"><b>Marco Mussi</b>, Luigi Pellegrino, Oscar Francesco Pindaro, Marcello Restelli and Francesco Trovò</span>
+            <span class="venue">Journal of Energy Storage, 2024</span>
+            <a href="https://doi.org/10.1016/j.est.2024.110572">Link</a>
+            <a href="papers/est2024/paper.pdf">Paper</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2023</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">ARLO: A Framework for Automated Reinforcement Learning</span>
+            <span class="authors"><b>Marco Mussi</b>, Davide Lombarda, Alberto Maria Metelli, Francesco Trovò and Marcello Restelli</span>
+            <span class="venue">Expert Systems with Applications, 2023</span>
+            <a href="https://doi.org/10.1016/j.eswa.2023.119883">Link</a>
+            <a href="papers/eswaautorl2023/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2205.10416">arXiv</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2022</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">An Online State of Health Estimation Method for Lithium-Ion Batteries based on Time Partitioning and Data-Driven Model Identification</span>
+            <span class="authors"><b>Marco Mussi</b>, Luigi Pellegrino, Marcello Restelli and Francesco Trovò</span>
+            <span class="venue">Journal of Energy Storage, 2022</span>
+            <a href="https://doi.org/10.1016/j.est.2022.105467">Link</a>
+            <a href="papers/est2022/paper.pdf">Paper</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2021</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">A voltage dynamic-based state of charge estimation method for batteries storage systems</span>
+            <span class="authors"><b>Marco Mussi</b>, Luigi Pellegrino, Marcello Restelli and Francesco Trovò</span>
+            <span class="venue">Journal of Energy Storage, 2021</span>
+            <a href="https://doi.org/10.1016/j.est.2021.103309">Link</a>
+            <a href="papers/est2021/paper.pdf">Paper</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group" id="workshops" data-prefix="W">
+        <h3 class="group-title">Workshops <span class="count" data-count="W"></span></h3>
+
+        <h4 class="year">2026</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Combinatorial Bandits with Plackett-Luce Feedback: A Worst-Case Analysis</span>
+            <span class="authors">Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <b>Marco Mussi</b></span>
+            <span class="venue">EWRL 2026</span>
+            <a href="https://openreview.net/forum?id=bZXX66DMZm">Link</a>
+            <a href="papers/ewrl2026cmab/paper.pdf">Paper</a>
+            <a href="papers/ewrl2026cmab/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Variance-Aware Optimal Ranking in Log-Concave Random Utility Models</span>
+            <span class="authors">Diego Alovisetti, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">EWRL 2026</span>
+            <a href="https://openreview.net/forum?id=QrzbZJ7nzz">Link</a>
+            <a href="papers/ewrl2026rum/paper.pdf">Paper</a>
+            <a href="papers/ewrl2026rum/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Modeling Incomparability: A New Rationality Paradigm for Preference-Based Reinforcement Learning</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b>, Leonardo Bianconi and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2026 EIML Workshop</span>
+            <a href="papers/icmlworkshopmobt2026/paper.pdf">Paper</a>
+            <a href="papers/icmlworkshopmobt2026/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Robust Learning to Rank from Incomplete Rankings under Positional Censoring</span>
+            <span class="authors">Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli and <b>Marco Mussi</b></span>
+            <span class="venue">ICML 2026 EIML Workshop</span>
+            <span class="award">Spotlight</span>
+            <a href="papers/icmlworkshopltr2026/paper.pdf">Paper</a>
+            <a href="papers/icmlworkshopltr2026/poster.pdf">Poster</a>
+            <a href="papers/icmlworkshopltr2026/slides.pdf">Slides</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2025</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Trading-off Reward Maximization and Stability in Sequential Decision Making</span>
+            <span class="authors">Federico Corso, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">EWRL 2025</span>
+            <a href="https://openreview.net/forum?id=5FSTwSgQQz">Link</a>
+            <a href="papers/ewrl2025stability/paper.pdf">Paper</a>
+            <a href="papers/ewrl2025stability/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">A Theoretical Perspective on Sequential Decision Making with Preference Feedback</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">EWRL 2025</span>
+            <a href="https://openreview.net/forum?id=eD4GO3mSvL">Link</a>
+            <a href="papers/ewrl2025preference/paper.pdf">Paper</a>
+            <a href="papers/ewrl2025preference/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">A Novel Self-Normalized Bernstein-Like Dimension-Free Inequality and Regret Bounds for Generalized Kernelized Bandits</span>
+            <span class="authors">Alberto Maria Metelli, Simone Drago and <b>Marco Mussi</b></span>
+            <span class="venue">EWRL 2025</span>
+            <a href="https://openreview.net/forum?id=kHglhH6Sd9">Link</a>
+            <a href="papers/ewrl2025gkb/paper.pdf">Paper</a>
+            <a href="papers/ewrl2025gkb/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Gym4ReaL: A Benchmark Suite for Evaluating Reinforcement Learning in Realistic Domains</span>
+            <span class="authors">Davide Salaorni, Vincenzo De Paola, Samuele Delpero, Giovanni Dispoto, Paolo Bonetti, Alessio Russo, Giuseppe Calcagno, Francesco Trovò, Matteo Papini, Alberto Maria Metelli, <b>Marco Mussi</b> and Marcello Restelli</span>
+            <span class="venue">EWRL 2025</span>
+            <a href="https://openreview.net/forum?id=Aomqn4nAhK">Link</a>
+            <a href="papers/ewrl2025lib/paper.pdf">Paper</a>
+            <a href="papers/ewrl2025lib/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Power Grid Control with Graph-Based Distributed Reinforcement Learning</span>
+            <span class="authors">Carlo Fabrizio*, Gianvito Losapio*, <b>Marco Mussi</b>, Alberto Maria Metelli and Marcello Restelli</span>
+            <span class="venue">ECML 2025 MLSPS Workshop</span>
+            <a href="papers/ecmlw2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2509.02861">arXiv</a>
+            <a href="papers/ecmlw2025/poster.pdf">Poster</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2024</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">State and Action Factorization in Power Grids</span>
+            <span class="authors">Gianvito Losapio, Davide Beretta, <b>Marco Mussi</b>, Alberto Maria Metelli and Marcello Restelli</span>
+            <span class="venue">ECML 2024 MLSPS Workshop</span>
+            <a href="papers/ecmlw2024/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2409.04467">arXiv</a>
+            <a href="papers/ecmlw2024/poster.pdf">Poster</a>
+            <a href="papers/ecmlw2024/slides.pdf">Slides</a>
+          </li>
+          <li class="pub">
+            <span class="title">Open Problem: Tight Bounds for Bernoulli Rewards in Kernelized Multi-Armed Bandits</span>
+            <span class="authors">Simone Drago and <b>Marco Mussi</b></span>
+            <span class="venue">ICML 2024 ARLET Workshop</span>
+            <a href="https://arlet-workshop.github.io/accepted_papers/">Link</a>
+            <a href="papers/icmlarlet2024/paper.pdf">Paper</a>
+            <a href="papers/icmlarlet2024/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Intermediate Observations in Factored-Reward Bandits</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b>, Marcello Restelli and Alberto Maria Metelli</span>
+            <span class="venue">AAMAS 2024 ALA Workshop</span>
+            <a href="https://openreview.net/forum?id=CIyAiUCfrj">Link</a>
+            <a href="papers/alafrb2024/paper.pdf">Paper</a>
+            <a href="papers/alafrb2024/slides.pdf">Slides</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2023</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Online Learning in Autoregressive Dynamics</span>
+            <span class="authors">Francesco Bacchiocchi*, Gianmarco Genalti*, Davide Maran*, <b>Marco Mussi</b>*, Marcello Restelli, Nicola Gatti and Alberto Maria Metelli</span>
+            <span class="venue">EWRL 2023</span>
+            <a href="https://openreview.net/forum?id=YrHpQWpwsy">Link</a>
+            <a href="papers/ewrlarb2023/paper.pdf">Paper</a>
+            <a href="papers/ewrlarb2023/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">Stochastic Rising Bandits: A Best Arm Identification Approach</span>
+            <span class="authors">Alessandro Montenegro, <b>Marco Mussi</b>, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli</span>
+            <span class="venue">EWRL 2023</span>
+            <a href="https://openreview.net/forum?id=Ctq0d9LEuT">Link</a>
+            <a href="papers/ewrlbaisrb2023/paper.pdf">Paper</a>
+            <a href="papers/ewrlbaisrb2023/poster.pdf">Poster</a>
+          </li>
+          <li class="pub">
+            <span class="title">A Best Arm Identification Approach for Stochastic Rising Bandits</span>
+            <span class="authors">Alessandro Montenegro, <b>Marco Mussi</b>, Francesco Trovò, Marcello Restelli and Alberto Maria Metelli</span>
+            <span class="venue">ICML 2023 F4LCD Workshop</span>
+            <a href="https://openreview.net/forum?id=k6aftfkuad">Link</a>
+            <a href="papers/icmlw2023/paper.pdf">Paper</a>
+            <a href="papers/icmlw2023/poster.pdf">Poster</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2022</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Dynamic Pricing with Online Data Aggregation and Learning</span>
+            <span class="authors">Gianmarco Genalti, <b>Marco Mussi</b>, Alessandro Nuara and Nicola Gatti</span>
+            <span class="venue">EWRL 2022</span>
+            <span class="award">Oral</span>
+            <a href="https://ewrl.files.wordpress.com/2022/09/paper_dynamic_pricing_ewrl.pdf">Link</a>
+            <a href="papers/ewrl2022/paper.pdf">Paper</a>
+            <a href="papers/ewrl2022/poster.pdf">Poster</a>
+            <a href="papers/ewrl2022/slides.pdf">Slides</a>
+          </li>
+          <li class="pub">
+            <span class="title">Dynamical Linear Bandits for Long-Lasting Vanishing Rewards</span>
+            <span class="authors"><b>Marco Mussi</b>, Alberto Maria Metelli and Marcello Restelli</span>
+            <span class="venue">ICML 2022 CFOL Workshop</span>
+            <a href="https://icml.cc/virtual/2022/18786">Link</a>
+            <a href="papers/icml2022/paper.pdf">Paper</a>
+            <a href="papers/icml2022/poster.pdf">Poster</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group" id="book-chapters" data-prefix="B">
+        <h3 class="group-title">Book Chapters <span class="count" data-count="B"></span></h3>
+
+        <h4 class="year">2026</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Multi-Armed Bandits Algorithms for Pricing and Advertising</span>
+            <span class="authors"><b>Marco Mussi</b></span>
+            <span class="venue">Special Topics in Information Technology, 2026</span>
+            <a href="https://doi.org/10.1007/978-3-032-12359-6_3">Link</a>
+            <a href="papers/springerbriefsphd/paper.pdf">Paper</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group" id="preprints" data-prefix="P">
+        <h3 class="group-title">Preprints <span class="count" data-count="P"></span></h3>
+
+        <h4 class="year">2026</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Learning a Ranking from Human Feedback in Log-Concave Random Utility Models</span>
+            <span class="authors">Diego Alovisetti, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">arXiv:2610.07973</span>
+            <a href="papers/offlinerum2026/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2610.07973">arXiv</a>
+          </li>
+          <li class="pub">
+            <span class="title">Reusing Past Samples in Proximal Policy Optimization: When and How Does It Help?</span>
+            <span class="authors">Alessandro Montenegro, Riccardo Venturelli, <b>Marco Mussi</b>, Matteo Papini and Alberto Maria Metelli</span>
+            <span class="venue">arXiv:2610.01399</span>
+            <a href="papers/rtppo2026/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2610.01399">arXiv</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2025</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Online Dynamic Pricing of Complementary Products</span>
+            <span class="authors"><b>Marco Mussi</b> and Marcello Restelli</span>
+            <span class="venue">arXiv:2511.22291</span>
+            <a href="papers/cpp2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2511.22291">arXiv</a>
+          </li>
+          <li class="pub">
+            <span class="title">Generalized Kernelized Bandits: A Novel Self-Normalized Bernstein-Like Dimension-Free Inequality and Regret Bounds</span>
+            <span class="authors">Alberto Maria Metelli, Simone Drago and <b>Marco Mussi</b></span>
+            <span class="venue">arXiv:2508.01681</span>
+            <a href="papers/gkb2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2508.01681">arXiv</a>
+          </li>
+          <li class="pub">
+            <span class="title">Gym4ReaL: A Suite for Benchmarking Real-World Reinforcement Learning</span>
+            <span class="authors">Davide Salaorni, Vincenzo De Paola, Samuele Delpero, Giovanni Dispoto, Paolo Bonetti, Alessio Russo, Giuseppe Calcagno, Francesco Trovò, Matteo Papini, Alberto Maria Metelli, <b>Marco Mussi</b> and Marcello Restelli</span>
+            <span class="venue">arXiv:2507.00257</span>
+            <a href="papers/realgym2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2507.00257">arXiv</a>
+          </li>
+          <li class="pub">
+            <span class="title">Learning Deterministic Policies with Policy Gradients in Constrained Markov Decision Processes</span>
+            <span class="authors">Alessandro Montenegro, Leonardo Cesani, <b>Marco Mussi</b>, Matteo Papini and Alberto Maria Metelli</span>
+            <span class="venue">arXiv:2506.05953</span>
+            <a href="papers/dcpg2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2506.05953">arXiv</a>
+          </li>
+          <li class="pub">
+            <span class="title">A refined Analysis of UCBVI</span>
+            <span class="authors">Simone Drago, <b>Marco Mussi</b> and Alberto Maria Metelli</span>
+            <span class="venue">arXiv:2502.17370</span>
+            <a href="papers/arxivucbvi2025/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2502.17370">arXiv</a>
+          </li>
+        </ol>
+
+        <h4 class="year">2024</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Open Problem: Tight Bounds for Kernelized Multi-Armed Bandits with Bernoulli Rewards</span>
+            <span class="authors"><b>Marco Mussi</b>, Simone Drago and Alberto Maria Metelli</span>
+            <span class="venue">arXiv:2407.06321</span>
+            <a href="papers/bernoulliopenproblem2024/paper.pdf">Paper</a>
+            <a href="https://doi.org/10.48550/arXiv.2407.06321">arXiv</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="pub-group" id="reports" data-prefix="T">
+        <h3 class="group-title">Technical Reports <span class="count" data-count="T"></span></h3>
+
+        <h4 class="year">2024</h4>
+        <ol class="pubs">
+          <li class="pub">
+            <span class="title">Position paper on AI for the operation of critical energy and mobility network infrastructures</span>
+            <span class="authors"><b>Marco Mussi</b>, Gianvito Losapio, Alberto Maria Metelli, Marcello Restelli, Ricardo Bessa, Antoine Marot, Daniel Boos, Clark Borst, Alberto Castagna, Duarte Dias, Adrian Egli, Andrina Eisenegger, Yassine El Manyari, Anton Fuxjäger, Samira Hamouche, Mohamed Hassouna, Bruno Lemetayer, Roman Liessner, Jonas Lundberg, Manuel Schneider, Irene Sturm, Julia Usher, Herke Van Hoof, Jan Viebahn and Toni Wäfler</span>
+            <span class="venue">AI4REALNET, 2024</span>
+            <a href="https://ai4realnet.eu/deliverables/">Link</a>
+            <a href="papers/ai4realnet2024/paper.pdf">Report</a>
+          </li>
+        </ol>
+      </div>
+
+      <p class="pub-note">* Equal Contribution.</p>
+    </div>
+  </section>
+
+  <!-- ============================== EXPERIENCE ============================== -->
+  <section class="section band" id="experience" aria-labelledby="experience-title">
+    <div class="wrap">
+      <h2 class="section-title" id="experience-title">Experience</h2>
+      <ol class="entries">
+        <li class="entry">
+          <span class="when">Jan 2026 - now</span>
+          <span class="what">Assistant Professor</span>
+          <span class="where">Politecnico di Milano</span>
+          <span class="note">Dipartimento di Elettronica, Informazione e Bioingegneria</span>
+        </li>
+        <li class="entry">
+          <span class="when">Jun 2024 - Jan 2026</span>
+          <span class="what">Postdoctoral Researcher</span>
+          <span class="where">Politecnico di Milano</span>
+          <span class="note">Dipartimento di Elettronica, Informazione e Bioingegneria</span>
+        </li>
+        <li class="entry">
+          <span class="when">Nov 2020 - Jun 2024</span>
+          <span class="what">Research Scientist</span>
+          <span class="where">ML cube</span>
+          <span class="note">During Ph.D. in Information Technology</span>
+        </li>
+        <li class="entry">
+          <span class="when">Jan 2020 - Oct 2020</span>
+          <span class="what">Research Assistant</span>
+          <span class="where">Politecnico di Milano</span>
+          <span class="note">Dipartimento di Elettronica, Informazione e Bioingegneria</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================== EDUCATION ============================== -->
+  <section class="section" id="education" aria-labelledby="education-title">
+    <div class="wrap">
+      <h2 class="section-title" id="education-title">Education</h2>
+      <ol class="entries">
+        <li class="entry">
+          <span class="when">Nov 2020 - Jun 2024</span>
+          <span class="what">Ph.D. in Information Technology</span>
+          <span class="where">Politecnico di Milano</span>
+          <span class="note">Focus on Reinforcement Learning and Online Learning</span>
+          <span class="note">Advisor: Prof. Marcello Restelli</span>
+          <a href="https://www.politesi.polimi.it/handle/10589/221772">Link</a>
+          <a href="papers/phdthesis/thesis.pdf">Thesis</a>
+          <a href="papers/phdthesis/slides.pdf">Slides</a>
+        </li>
+        <li class="entry">
+          <span class="when">Sep 2017 - Dec 2019</span>
+          <span class="what">M.Sc. in Computer Science and Engineering</span>
+          <span class="where">Politecnico di Milano</span>
+        </li>
+        <li class="entry">
+          <span class="when">Sep 2014 - Jul 2017</span>
+          <span class="what">B.Sc. in Engineering of Computing Systems</span>
+          <span class="where">Politecnico di Milano</span>
+        </li>
+        <li class="entry">
+          <span class="when">Sep 2008 - Jul 2014</span>
+          <span class="what">High School Diploma in Computer Science</span>
+          <span class="where">IIS Galileo Galilei Crema</span>
+          <span class="note">Main focus: C, Java, HTML, CSS, Javascript</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<!-- ============================== CONTACT ============================== -->
+<footer class="site-footer" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 class="footer-title" id="contact-title">Get in touch</h2>
+        <a class="footer-email" href="#contact" data-user="marco.mussi" data-domain="polimi.it" data-show>marco DOT mussi AT polimi DOT it</a>
+        <button class="copy" type="button" hidden><svg class="icon"><use href="#i-copy"/></svg><span>Copy address</span></button>
+      </div>
+      <div class="office">
+        <div class="map-art" aria-hidden="true">
+          <span class="map-chip">Office</span>
+          <span class="map-pin"><svg class="icon"><use href="#i-pin"/></svg></span>
+        </div>
+        <address>
+          <strong class="uni">Politecnico di Milano</strong>
+          <span class="dept">Dipartimento di Elettronica, Informazione e Bioingegneria</span>
+          <span class="place"><b>Città Studi</b> · Building 21 · First Floor · Office 19</span>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright"><b>Marco Mussi</b> · © 2026</p>
+      <ul class="socials">
+        <li><a href="https://scholar.google.com/citations?user=3gca-JUAAAAJ&hl=en" aria-label="Google Scholar" title="Google Scholar"><svg class="icon"><use href="#i-scholar"/></svg></a></li>
+        <li><a href="https://www.github.com/marcomussi" aria-label="GitHub" title="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/marcomussi95/" aria-label="LinkedIn" title="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+      </ul>
+      <a class="to-top" href="#top">Back to top <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const root = document.documentElement;
+
+// Experience and education: mark the current role (its dates end with "now").
+for (const w of document.querySelectorAll(".when")) {
+  if (/now\s*$/i.test(w.textContent)) w.parentElement.classList.add("is-current");
+}
+
+// Light/dark switch: follows the system setting until the visitor picks one, then remembers it.
+document.querySelector(".theme-toggle").addEventListener("click", () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+  try { localStorage.setItem("theme", root.dataset.theme); } catch (e) { /* private mode: still switches */ }
+});
+
+// Email links: the address is put together here, so it never appears whole in the page source.
+for (const a of document.querySelectorAll("a[data-user]")) {
+  const address = a.dataset.user + "@" + a.dataset.domain;
+  a.href = "mailto:" + address;
+  if (a.hasAttribute("data-show")) a.textContent = address;
+}
+
+// Footer: "Copy address" button, shown only where the browser allows copying.
+const copy = document.querySelector(".copy");
+if (navigator.clipboard) {
+  copy.hidden = false;
+  copy.addEventListener("click", () => {
+    const label = copy.querySelector("span");
+    navigator.clipboard.writeText(document.querySelector(".footer-email").textContent).then(() => {
+      label.textContent = "Copied";
+      setTimeout(() => (label.textContent = "Copy address"), 1600);
+    });
+  });
+}
+
+// Publications: label each paper (C1 = oldest) and fill in the counts, so nothing is numbered by hand.
+const counts = {};
+for (const group of document.querySelectorAll(".pub-group[data-prefix]")) {
+  const pubs = group.querySelectorAll(".pub");
+  pubs.forEach((pub, i) => {
+    const label = group.dataset.prefix + (pubs.length - i);
+    pub.id = label;
+    pub.insertAdjacentHTML("afterbegin", `<a class="label" href="#${label}">${label}</a>`);
+  });
+  counts[group.dataset.prefix] = pubs.length;
+}
+for (const el of document.querySelectorAll("[data-count]")) el.textContent = counts[el.dataset.count];
+
+// Top bar: underline the section currently on screen.
+const navLinks = new Map([...document.querySelectorAll(".nav a")].map((a) => [a.hash.slice(1), a]));
+const onScreen = new Set();
+const spy = new IntersectionObserver((entries) => {
+  for (const e of entries) e.isIntersecting ? onScreen.add(e.target.id) : onScreen.delete(e.target.id);
+  const current = [...navLinks.keys()].find((id) => onScreen.has(id));
+  for (const [id, a] of navLinks) id === current ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current");
+}, { rootMargin: "-30% 0px -65% 0px" });
+for (const id of navLinks.keys()) spy.observe(document.getElementById(id));
+</script>
+
+</body>
 </html>
